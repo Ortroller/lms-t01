@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo motos</title>
+</head>
+<body>
+    
+    <!-- Primeira parte - item 1 ao 3 -->
+
+    <h1>Catálogo de motos online</h1>
+    <!-- Titulo separado da lista (ul) -->
+    <div>
+        <ul> 
+            <!-- lista não ordenada (ul) seguida de seus itens (li)-->
+            <li>
+                <a href="https://www.kawasakibrasil.com/pt-br/motocicletas/ninja/sport/ninja-400/2023-ninja-400-se-krt-edition">
+                    <img src="./static/nj400_krt.png">
+                </a>
+                <!-- Tag 'a', normalmente usada para fazer referencias a links. tag 'img' para inserir a imagem. ao clicar, o link sera direcionado para o href dentro da tag pai ('a') -->
+            </li>
+            <li>
+                <a href="https://www.youtube.com/watch?app=desktop&v=2d4YSGqZM24">Test ride Kawasaki Ninja 400 (youtube)</a>
+            </li>
+            <li>
+                <a href="https://www.yamaha-motor.com.br/r3-abs/product/30079">Concorrente direta: Yamaha R3</a>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <!-- Segunda parte - item 4 ao 6 -->
+        <table style="border: 1px double black;">
+            <!-- Tabela com bordas para deixar mais organizado a disposição dos itens -->
+            <thead>
+                <!-- cabeçalho da tabela, com a borda do fundo em cada <th> para separar o conteudo do cabeçalho -->
+                <tr>
+                    <th style="border-bottom: 1px double black;">Moto</th>
+                    <th style="border-bottom: 1px double black;">Potência</th>
+                    <th style="border-bottom: 1px double black;">Cilindradas</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <!-- Conteudo da tabela, contendo em cada linha (row) o conteudo descrito por cada cabeçalho -->
+                <tr>
+                    <td>Ninja 400</td>
+                    <td><b>48hp</b></td>
+                    <td>399</td>
+                </tr>
+                <tr>
+                    <td>R3</td>
+                    <td><b>42hp</b></td>
+                    <td>321</td>
+                </tr>
+                <tr>
+                    <td>CB500f</td>
+                    <td><b>50.2hp</b></td>
+                    <td>471</td>
+                </tr>
+            </tbody>
+           
+        </table>
+    </div>
+</body>
+</html>

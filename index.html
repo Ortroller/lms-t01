@@ -6,62 +6,99 @@
     <title>Catálogo motos</title>
 </head>
 <body>
+
+    <article>
+        <header title="Motos" role="catalogo">
+            <h1>Catálogo de motos online</h1>
+        </header>
+        <!-- Titulo separado da lista (ul) -->
+        <section>
+            <ul> 
+                <!-- lista não ordenada (ul) seguida de seus itens (li)-->
+                <li>
+                    <a href="https://www.kawasakibrasil.com/pt-br/motocicletas/ninja/sport/ninja-400/2023-ninja-400-se-krt-edition">
+                        <img src="./static/nj400_krt.png">
+                    </a>
+                    <!-- Tag 'a', normalmente usada para fazer referencias a links. tag 'img' para inserir a imagem. ao clicar, o link sera direcionado para o href dentro da tag pai ('a') -->
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?app=desktop&v=2d4YSGqZM24">Test ride Kawasaki Ninja 400 (youtube)</a>
+                </li>
+                <li>
+                    <a href="https://www.yamaha-motor.com.br/r3-abs/product/30079">Concorrente direta: Yamaha R3</a>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <table style="border: 1px double black;">
+                <!-- Tabela com bordas para deixar mais organizado a disposição dos itens -->
+                <thead>
+                    <!-- cabeçalho da tabela, com a borda do fundo em cada <th> para separar o conteudo do cabeçalho -->
+                    <tr>
+                        <th style="border-bottom: 1px double black;">Moto</th>
+                        <th style="border-bottom: 1px double black;">Potência</th>
+                        <th style="border-bottom: 1px double black;">Cilindradas</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <!-- Conteudo da tabela, contendo em cada linha (row) o conteudo descrito por cada cabeçalho -->
+                    <tr>
+                        <td>Ninja 400</td>
+                        <td><b>48hp</b></td>
+                        <td>399</td>
+                    </tr>
+                    <tr>
+                        <td>R3</td>
+                        <td><b>42hp</b></td>
+                        <td>321</td>
+                    </tr>
+                    <tr>
+                        <td>CB500f</td>
+                        <td><b>50.2hp</b></td>
+                        <td>471</td>
+                    </tr>
+                </tbody>
+            
+            </table>
+        </section>
+    </article>
+
+    <article>
+        <header title="Pedidos">
+            <h1>Faça seu pedido</h1>
+        </header>
+
+        <form action="https://www.w3schools.com/action_page.php" method="get">
+            <label for="bikeName">Detalhes da moto</label><br>
+            <input type="text" name="bikeName" maxlength="15" placeholder="Modelo da moto desejada"><br>
     
-    <!-- Primeira parte - item 1 ao 3 -->
+            <label for="bikeValue">Valor inicial entre 25000 e 30000</label><br>
+            <input type="number" name="bikeValue" min="25000" max="30000"><br>
+    
+            <label for="condition">Condição do veículo</label><br>
+            <input type="radio" name="condition" value="new">
+            <label for="condition">Nova</label><br>
+            <input type="radio" name="condition" value="used">
+            <label for="condition">Usada</label><br>
+    
+            <label for="colorFilter">Filtro de cores</label><br>
+            <input type="checkbox" name="red" >
+            <div style="width: 8px; height: 8px; border-radius: 50%; background-color: red; display: inline-block;"></div><br>
 
-    <h1>Catálogo de motos online</h1>
-    <!-- Titulo separado da lista (ul) -->
-    <div>
-        <ul> 
-            <!-- lista não ordenada (ul) seguida de seus itens (li)-->
-            <li>
-                <a href="https://www.kawasakibrasil.com/pt-br/motocicletas/ninja/sport/ninja-400/2023-ninja-400-se-krt-edition">
-                    <img src="./static/nj400_krt.png">
-                </a>
-                <!-- Tag 'a', normalmente usada para fazer referencias a links. tag 'img' para inserir a imagem. ao clicar, o link sera direcionado para o href dentro da tag pai ('a') -->
-            </li>
-            <li>
-                <a href="https://www.youtube.com/watch?app=desktop&v=2d4YSGqZM24">Test ride Kawasaki Ninja 400 (youtube)</a>
-            </li>
-            <li>
-                <a href="https://www.yamaha-motor.com.br/r3-abs/product/30079">Concorrente direta: Yamaha R3</a>
-            </li>
-        </ul>
-    </div>
+            <input type="checkbox" name="green">
+            <div style="width: 8px; height: 8px; border-radius: 50%; background-color: green; display: inline-block;"></div><br>
 
-    <div>
-        <!-- Segunda parte - item 4 ao 6 -->
-        <table style="border: 1px double black;">
-            <!-- Tabela com bordas para deixar mais organizado a disposição dos itens -->
-            <thead>
-                <!-- cabeçalho da tabela, com a borda do fundo em cada <th> para separar o conteudo do cabeçalho -->
-                <tr>
-                    <th style="border-bottom: 1px double black;">Moto</th>
-                    <th style="border-bottom: 1px double black;">Potência</th>
-                    <th style="border-bottom: 1px double black;">Cilindradas</th>
-                </tr>
-            </thead>
+            <input type="checkbox" name="blue">
+            <div style="width: 8px; height: 8px; border-radius: 50%; background-color: blue; display: inline-block;"></div><br>
 
-            <tbody>
-                <!-- Conteudo da tabela, contendo em cada linha (row) o conteudo descrito por cada cabeçalho -->
-                <tr>
-                    <td>Ninja 400</td>
-                    <td><b>48hp</b></td>
-                    <td>399</td>
-                </tr>
-                <tr>
-                    <td>R3</td>
-                    <td><b>42hp</b></td>
-                    <td>321</td>
-                </tr>
-                <tr>
-                    <td>CB500f</td>
-                    <td><b>50.2hp</b></td>
-                    <td>471</td>
-                </tr>
-            </tbody>
-           
-        </table>
-    </div>
+            <input type="checkbox" name="black">
+            <div style="width: 8px; height: 8px; border-radius: 50%; background-color: black; display: inline-block;"></div><br><br>
+    
+            <button type="submit">Peça</button>
+        </form>
+    </article>
+
 </body>
 </html>
